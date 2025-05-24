@@ -1,0 +1,11 @@
+start
+new x number
+new count number
+loop a (> -1)
+  if (count >= 3)
+  close 
+  set x x + 2
+  set count count + 1
+end a
+log number x
+finish
