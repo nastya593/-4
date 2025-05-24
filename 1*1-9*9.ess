@@ -1,12 +1,17 @@
 start 
 new i number
-new j number
-set i 1
-loop a (i > 9)
-  set j 1
-  loop b (j > 10)
-    new proizv number
-    set proizv i * j
+set i 0
+loop a (> -1)
+  if (i >= 10)    
+  close
+  new j number 
+  set j 0
+  loop b (> -1)   
+    if(j >= 10)
+    close
+    new c number
+    set c (i+1)*(j+1)
+    log number c
     set j j + 1
   end b
   set i i + 1
